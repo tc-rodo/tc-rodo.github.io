@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111011">
+  <meta name="description" content="T. C. Ro&Do — najam prostora u Zagrebu za glazbene programe, privatne proslave, kvizove, snimanja i druge projekte.">
+  <title>T. C. Ro&Do — Najam prostora u Zagrebu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="T. C. Ro&Do — početna">T. C. Ro&Do</a>
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <a href="#space" data-i18n="navSpace">Prostor</a>
+      <a href="#rental" data-i18n="navRental">Najam</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
+    <div class="language-switch" aria-label="Odabir jezika">
+      <button class="lang active" type="button" data-lang="hr" aria-pressed="true">HR</button>
+      <span>/</span>
+      <button class="lang" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="Otvori izbornik" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="images/ext3.jpeg" alt="Vanjski prostor T. C. Ro&Do" onerror="this.style.display='none'; this.parentElement.classList.add('image-missing')">
+        <div class="hero-placeholder" aria-hidden="true"><span>T. C. Ro&Do</span><small>Fotografija prostora</small></div>
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">ZAGREB · ILICA 73/2</p>
+        <h1><span>T. C. Ro&Do</span><span data-i18n="heroTitle">Najam prostora</span></h1>
+        <div class="hero-actions">
+          <a class="button button-light" href="#contact" data-i18n="sendInquiry">Pošalji upit <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="tagline">La kafana opskura where long nights begin...since 1990 :)</p>
+      </div>
+    </section>
+
+    <section class="section intro-section" aria-label="O prostoru">
+      <p class="lead intro-copy"><span data-i18n="rentalIntro">Prostor T. C. Ro&Do-a dostupan je za najam i organizaciju različitih događanja — privatnih proslava, glazbenih programa, kvizova, snimanja i drugih projekata.</span> <span data-i18n="rentalOutroStart">Imaš ideju za nešto drugačije? Otvoreni smo za prijedloge.</span> <a class="text-link inline-contact-link" href="#contact"><span data-i18n="rentalContactLink">Javi nam se!</span></a></p>
+    </section>
+
+    <section class="section space-section" id="space">
+      <div class="gallery-controls">
+        <div class="gallery-tabs" role="group" aria-label="Filter galerije">
+          <button class="gallery-tab active" data-filter="all" type="button" data-i18n="allPhotos">Sve fotografije</button>
+          <button class="gallery-tab" data-filter="ext" type="button" data-i18n="outdoor">Terasa</button>
+          <button class="gallery-tab" data-filter="int" type="button" data-i18n="interior">Interijer</button>
+        </div>
+        <div class="gallery-arrows"><button class="arrow" id="galleryPrev" type="button" aria-label="Prethodne fotografije">←</button><button class="arrow" id="galleryNext" type="button" aria-label="Sljedeće fotografije">→</button></div>
+      </div>
+      <div class="gallery" id="gallery">
+        <button class="gallery-item" data-kind="ext" data-src="images/ext1.jpeg" type="button"><img src="images/ext1.jpeg" alt="Vanjski prostor, fotografija 1" loading="lazy"><span>01</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext2.jpeg" type="button"><img src="images/ext2.jpeg" alt="Vanjski prostor, fotografija 2" loading="lazy"><span>02</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext3.jpeg" type="button"><img src="images/ext3.jpeg" alt="Vanjski prostor, fotografija 3" loading="lazy"><span>03</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext4.jpeg" type="button"><img src="images/ext4.jpeg" alt="Vanjski prostor, fotografija 4" loading="lazy"><span>04</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext5.jpeg" type="button"><img src="images/ext5.jpeg" alt="Vanjski prostor, fotografija 5" loading="lazy"><span>05</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext6.jpeg" type="button"><img src="images/ext6.jpeg" alt="Vanjski prostor, fotografija 6" loading="lazy"><span>06</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext7.jpeg" type="button"><img src="images/ext7.jpeg" alt="Vanjski prostor, fotografija 7" loading="lazy"><span>07</span></button>
+        <button class="gallery-item" data-kind="ext" data-src="images/ext8.jpeg" type="button"><img src="images/ext8.jpeg" alt="Vanjski prostor, fotografija 8" loading="lazy"><span>08</span></button>
+        <button class="gallery-item" data-kind="int" data-src="images/int1.jpg" type="button"><img src="images/int1.jpg" alt="Interijer, fotografija 1" loading="lazy"><span>09</span></button>
+        <button class="gallery-item" data-kind="int" data-src="images/int2.jpg" type="button"><img src="images/int2.jpg" alt="Interijer, fotografija 2" loading="lazy"><span>10</span></button>
+        <button class="gallery-item" data-kind="int" data-src="images/int3.jpg" type="button"><img src="images/int3.jpg" alt="Interijer, fotografija 3" loading="lazy"><span>11</span></button>
+        <button class="gallery-item" data-kind="int" data-src="images/int4.jpg" type="button"><img src="images/int4.jpg" alt="Interijer, fotografija 4" loading="lazy"><span>12</span></button>
+      </div>
+      <p class="gallery-hint" data-i18n="galleryHint">Odaberi fotografiju za veći prikaz.</p>
+    </section>
+
+    <section class="section rental-section" id="rental">
+      <div class="rental-layout">
+        <div class="rental-details">
+          <article class="detail-card capacity-card">
+            <div class="detail-card-heading"><h3 data-i18n="capacityTitle">Kapacitet</h3></div>
+            <div class="capacity-options">
+              <p><strong>100</strong><span data-i18n="seated">gostiju · sjedeća postava</span></p>
+              <p><strong>200</strong><span data-i18n="standing">gostiju · stajaća postava</span></p>
+            </div>
+          </article>
+          <article class="detail-card pricing-card">
+            <div class="detail-card-heading"><h3 data-i18n="pricingTitle">Termini i cijena</h3></div>
+            <p data-i18n="pricingText">Cijena na upit. Dostupnost termina i uvjeti najma dogovaraju se ovisno o događanju.</p>
+          </article>
+        </div>
+      </div>
+      <div class="menu-feature">
+        <img class="menu-qr" src="images/drinks-menu-qr.png" alt="QR kod za cjenik pića">
+        <a class="footer-menu" href="https://previseljudisezoveananovak-dot.github.io/rodo-cjenik/" target="_blank" rel="noreferrer" data-i18n="drinksMenu">Cjenik pića ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-intro">
+        <p class="tagline contact-tagline">Let’s make it happen!</p>
+        <p class="contact-copy" data-i18n="contactIntro">Imaš ideju za event? Pošalji nam datum, broj gostiju i nekoliko detalja. Javit ćemo ti se kako bismo dogovorili mogućnosti najma.</p>
+        <h2 class="contact-heading" data-i18n="contactTitle">KONTAKT</h2>
+        <div class="contact-links">
+          <a href="https://wa.me/385914111113" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4ZM8.4 7.8c-.2-.5-.5-.5-.8-.5h-.7c-.3 0-.7.2-.9.5-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.1 3.3 5.2 4.5 2.6 1 3.2.8 3.8.7.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.7-.5l-2.2-1.1c-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.1-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6Z"/></svg><span>WhatsApp</span><small>+385 91 411 1113</small></a>
+          <a href="https://www.instagram.com/t.c.ro.do.zg/" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r=".8" class="icon-fill"/></svg><span>Instagram</span></a>
+          <a href="https://www.facebook.com/Ro.Do.Zagreb" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="icon-fill" d="M13.7 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V13h2.8v8Z"/></svg><span>Facebook</span></a>
+          <a href="https://maps.app.goo.gl/9ZJd9HnzSY215QW6A" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5.2-8 11-8 11S4 15.2 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Google Maps</span></a>
+        </div>
+        <div class="map-embed"><iframe title="T. C. Ro&Do — Ilica 73/2, Zagreb" src="https://maps.google.com/maps?q=Ilica%2073%2F2%2C%20Zagreb%2C%20Croatia&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+      <form class="inquiry-form" id="inquiryForm">
+        <label><span data-i18n="nameLabel">Ime i prezime</span><input name="name" type="text" autocomplete="name" required placeholder="" data-i18n-placeholder="namePlaceholder"></label>
+        <label><span data-i18n="typeLabel">Vrsta događanja</span><select name="eventType" id="eventType" required><option value="" data-i18n="chooseType">Odaberi vrstu događanja</option><option data-i18n="privateCelebration">Privatna proslava</option><option data-i18n="musicEvent">Glazbeni program</option><option data-i18n="quizNight">Kviz</option><option data-i18n="shoot">Snimanje</option><option data-i18n="popup">Pop-up ili promotivno događanje</option><option data-i18n="other">Nešto drugo</option></select></label>
+        <div class="form-row">
+          <label><span data-i18n="dateLabel">Željeni datum</span><input name="date" type="date" required></label>
+          <label><span data-i18n="guestsLabel">Približan broj gostiju</span><input name="guests" type="number" min="1" max="200" inputmode="numeric" placeholder="" data-i18n-placeholder="guestsPlaceholder"></label>
+        </div>
+        <label><span data-i18n="detailsLabel">Dodatni detalji</span><textarea name="details" rows="4" placeholder="" data-i18n-placeholder="detailsPlaceholder"></textarea></label>
+        <button class="button button-light submit-button" type="submit"><span data-i18n="sendWhatsApp">Pošalji upit putem WhatsAppa</span> <span aria-hidden="true">↗</span></button>
+        <p class="form-note" data-i18n="formNote">WhatsApp će se otvoriti s pripremljenom porukom koju možeš pregledati i poslati.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#home">T. C. Ro&Do</a>
+    <p>La kafana opskura where long nights begin...since 1990 :)</p>
+    <span class="copyright">© T. C. Ro&Do</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Zatvori">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Prethodna fotografija">←</button>
+    <img src="" alt="">
+    <button class="lightbox-next" type="button" aria-label="Sljedeća fotografija">→</button>
+    <p class="lightbox-count"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
