@@ -93,3 +93,6 @@
 .rental-details .detail-card>p{max-width:none;line-height:1.6}
 .menu-feature{max-width:980px;margin-left:auto;margin-right:auto}
 @media(max-width:560px){.rental-details .detail-card{padding-top:15px!important;padding-bottom:16px!important}}
+.gallery-item[hidden] {
+  display: none !important;
+}
