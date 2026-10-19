@@ -96,3 +96,53 @@
 .gallery-item[hidden] {
   display: none !important;
 }
+
+/* Tamnija pozadina pri otvaranju fotografije */
+.lightbox {
+  background: rgba(0, 0, 0, 0.98);
+}
+
+/* Bolji prikaz fotografija na mobitelu */
+@media (max-width: 560px) {
+  .lightbox {
+    padding: 48px 10px;
+  }
+
+  .lightbox img {
+    max-width: 100%;
+    max-height: 82dvh;
+    object-fit: contain;
+  }
+}
+
+/* Iskoristi cijeli ekran kad se mobitel okrene vodoravno */
+@media (max-width: 800px) and (orientation: landscape) {
+  .lightbox {
+    padding: 8px 55px;
+  }
+
+  .lightbox img {
+    max-width: 100%;
+    max-height: 94dvh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lightbox-close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .lightbox-prev {
+    left: 6px;
+  }
+
+  .lightbox-next {
+    right: 6px;
+  }
+
+  .lightbox-count {
+    bottom: 5px;
+  }
+}
