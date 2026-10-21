@@ -154,4 +154,185 @@
   align-items: center;
 }
 
+/* Globalno smanjenje praznog prostora između sekcija */
+.section {
+  padding-top: clamp(48px, 6vw, 82px);
+  padding-bottom: clamp(48px, 6vw, 82px);
+}
+
+/* Naslovi bliže sadržaju */
+.section-heading {
+  margin-bottom: 26px;
+  row-gap: 10px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: -6px;
+}
+
+/* Galerija: manje praznog prostora oko kontrola i opisa */
+.gallery-controls {
+  margin-bottom: 14px;
+}
+
+.gallery-hint {
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+/* Uvodna sekcija */
+.intro-section {
+  padding-top: 40px;
+  padding-bottom: 38px;
+}
+
+/* Cjenik i informacije o prostoru */
+.rental-section {
+  padding-top: clamp(48px, 6vw, 76px);
+  padding-bottom: clamp(48px, 6vw, 76px);
+}
+
+.rental-layout {
+  gap: 24px;
+}
+
+.rental-details .detail-card {
+  padding-top: 13px !important;
+  padding-bottom: 14px !important;
+}
+
+.rental-details .detail-card-heading {
+  margin-bottom: 8px;
+}
+
+/* QR kod i poveznica na cjenik */
+.menu-feature {
+  margin-top: 22px;
+  padding-top: 18px;
+  gap: 18px;
+}
+
+/* Kontakt: naslov, tekst, poveznice i obrazac */
+.contact-section {
+  padding-top: clamp(48px, 6vw, 78px);
+  padding-bottom: clamp(48px, 6vw, 78px);
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.contact-intro h2 {
+  margin-bottom: 12px;
+}
+
+.contact-tagline {
+  margin-bottom: 14px;
+}
+
+.contact-copy {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.contact-heading {
+  margin-bottom: 16px !important;
+}
+
+.contact-links {
+  gap: 9px;
+}
+
+.map-embed {
+  margin-top: 20px;
+}
+
+.inquiry-form {
+  gap: 14px;
+}
+
+/* Mobilna verzija */
+@media (max-width: 800px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .rental-section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .rental-layout {
+    gap: 24px;
+  }
+
+  .contact-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 30px;
+  }
+
+  .menu-feature {
+    margin-top: 20px;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 42px 18px;
+  }
+
+  .intro-section {
+    padding: 34px 18px 30px;
+  }
+
+  .space-section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .gallery-controls {
+    margin-bottom: 12px;
+  }
+
+  .rental-section {
+    padding: 40px 18px;
+  }
+
+  .rental-layout {
+    gap: 20px;
+  }
+
+  .rental-details .detail-card {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .menu-feature {
+    margin-top: 18px;
+    padding-top: 14px;
+    gap: 14px;
+  }
+
+  .contact-section {
+    padding: 42px 18px;
+    gap: 26px;
+  }
+
+  .contact-heading {
+    margin-bottom: 14px !important;
+  }
+
+  .contact-copy {
+    margin-bottom: 18px;
+  }
+
+  .inquiry-form {
+    gap: 13px;
+  }
+}
+
 
