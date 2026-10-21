@@ -154,17 +154,4 @@
   align-items: center;
 }
 
-.site-footer .footer-logo {
-  display: block;
-  width: auto;
-  height: 44px;
-  max-width: 190px;
-  object-fit: contain;
-}
 
-@media (max-width: 560px) {
-  .site-footer .footer-logo {
-    height: 36px;
-    max-width: 155px;
-  }
-}
