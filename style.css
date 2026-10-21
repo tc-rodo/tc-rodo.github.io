@@ -146,3 +146,25 @@
     bottom: 5px;
   }
 }
+
+/* Novi logo u footeru */
+.site-footer .footer-wordmark {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.site-footer .footer-logo {
+  display: block;
+  width: auto;
+  height: 42px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .site-footer .footer-logo {
+    height: 36px;
+    max-width: 135px;
+  }
+}
