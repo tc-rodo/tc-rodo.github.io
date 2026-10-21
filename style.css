@@ -335,4 +335,138 @@
   }
 }
 
+/* Tighter overall layout — Ro&Do */
+
+/* Smanji gornji i donji prostor svih glavnih sekcija */
+.section {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/* Galerija */
+.space-section {
+  padding-top: 30px !important;
+  padding-bottom: 26px !important;
+}
+
+.section-heading {
+  margin-bottom: 18px !important;
+}
+
+.gallery-controls {
+  margin-bottom: 10px !important;
+}
+
+.gallery-hint {
+  margin-top: 6px !important;
+}
+
+/* Uvodni tekst */
+.intro-section {
+  padding-top: 28px !important;
+  padding-bottom: 26px !important;
+}
+
+/* Cjenik i kapacitet */
+.rental-section {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.rental-layout {
+  gap: 16px !important;
+}
+
+.rental-details .detail-card {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* QR kod i cjenik */
+.menu-feature {
+  margin-top: 16px !important;
+  padding-top: 14px !important;
+}
+
+/* Kontakt i obrazac */
+.contact-section {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  gap: 24px !important;
+}
+
+.contact-tagline {
+  margin-bottom: 10px !important;
+}
+
+.contact-copy {
+  margin-bottom: 16px !important;
+}
+
+.contact-heading {
+  margin-bottom: 12px !important;
+}
+
+.contact-links {
+  gap: 7px !important;
+}
+
+.map-embed {
+  margin-top: 14px !important;
+}
+
+.inquiry-form {
+  gap: 11px !important;
+}
+
+/* Mobilni uređaji */
+@media (max-width: 800px) {
+  .section,
+  .rental-section,
+  .contact-section {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .rental-layout,
+  .contact-section {
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .section,
+  .space-section,
+  .rental-section,
+  .contact-section {
+    padding: 26px 18px !important;
+  }
+
+  .intro-section {
+    padding: 24px 18px !important;
+  }
+
+  .section-heading {
+    margin-bottom: 16px !important;
+  }
+
+  .gallery-controls {
+    margin-bottom: 8px !important;
+  }
+
+  .rental-layout,
+  .contact-section {
+    gap: 18px !important;
+  }
+
+  .menu-feature {
+    margin-top: 12px !important;
+    padding-top: 12px !important;
+  }
+
+  .inquiry-form {
+    gap: 10px !important;
+  }
+}
+
 
