@@ -469,4 +469,42 @@
   }
 }
 
+/* Desktop: dominantniji kontaktni tekst, uži obrazac */
+@media (min-width: 801px) {
+  .contact-section {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: clamp(48px, 6vw, 90px);
+    align-items: start;
+  }
+
+  .contact-intro {
+    max-width: 680px;
+  }
+
+  .inquiry-form {
+    width: 100%;
+    max-width: 560px;
+    justify-self: end;
+    gap: 12px;
+  }
+
+  .inquiry-form input,
+  .inquiry-form select,
+  .inquiry-form textarea {
+    padding: 10px 12px;
+  }
+
+  .inquiry-form textarea {
+    min-height: 90px;
+  }
+
+  .inquiry-form label {
+    gap: 5px;
+  }
+
+  .form-row {
+    gap: 10px;
+  }
+}
+
 
